@@ -1,0 +1,31 @@
+
+<van-tabs active="{{ active }}" bind:change="onChange" bind:tap="onactive" type="card" title-active-color="#fff" background="#f3c258">
+  <van-tab title="历史上的今天" >
+    <view class="history list">
+      <view class="alumb">
+        <image src="../../assets/images/tabbar/278243350395395610.jpg" mode="widthFix"/>
+      </view>
+      <block wx:for="{{todayInHistory}}">
+        <view class="item">
+          <view class="tab">史今</view>
+          <view class="news-item">{{item.year}}{{item.title}}</view>       
+        </view>
+      </block>
+    </view>
+  </van-tab>
+  <van-tab title="新闻资讯">
+    <view class="hotNews list">
+      <image src="../../assets/images/tabbar/885536268710071009.jpg" mode="widthFix" class="alumb"style="width: 100%;"/>
+      <block wx:for="{{hotsearsh}}">
+        <view class="item">
+          <view class="tab">新闻</view>
+          <view class="news-item">
+          {{item}}
+          </view>
+        </view>
+      </block>
+    </view>
+  </van-tab>
+</van-tabs>
+
+

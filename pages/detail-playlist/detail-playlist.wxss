@@ -1,0 +1,105 @@
+.bg-color, .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 480rpx;
+  z-index: -1;
+}
+
+.bg-img .img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.bg-color { 
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+}
+
+.top {
+  margin-top: 70rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+.top .show-info {
+  display: flex;
+  align-items: center;
+}
+
+.top .show-info .coverImg {
+  width: 220rpx;
+}
+
+.top .show-info .coverImg .img {
+  width: 220rpx;
+}
+
+.top .show-info .info {
+  color: #fff;
+  margin-left: 24rpx;
+}
+
+.top .show-info .info .artist {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.top .show-info .info .artist .imga {
+  width: 80rpx;
+  margin-right: 20rpx;
+}
+
+.top .show-info .info .artist .imga .icons {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.top .show-info .info .dec {
+  margin-top: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.top .bar {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60rpx;
+}
+
+.bar .like {
+  display: flex;
+  /* align-items: center; */
+  margin-right: 150rpx;
+}
+
+.bar .like .img {
+  width: 60rpx;
+}
+
+.bar .share {
+  display: flex;
+  /* align-items: center; */
+}
+
+.bar .share .img {
+  width: 60rpx;
+  margin-top: -8rpx;
+}
+
+.list {
+  margin-top: 80rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+

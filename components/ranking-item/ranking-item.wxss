@@ -1,0 +1,50 @@
+.ranking-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin:30rpx 0;
+  padding-left: 24rpx;
+  box-sizing: border-box;
+  border-radius: 16rpx;
+  background-color: #f3f2f1;
+  opacity: 0.9;
+  
+}
+
+.ranking-item .item-left {
+  flex: 1;
+}
+
+.ranking-item .item-left .title {
+  margin-bottom: 30rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.ranking-item .item-left .list-item {
+  display: flex;
+  font-size: 26rpx;
+  align-items: center;
+}
+.ranking-item .item-left .list-item .artist {
+  font-size: 20rpx;
+  margin-left: 6rpx;
+}
+.ranking-item .item-right .album {
+  position: relative;
+}
+.ranking-item .item-right .album image{
+  width: 220rpx;
+  border-radius: 16rpx;
+}
+.ranking-item .item-right .album .playcount {
+  position: absolute;
+  bottom: 10rpx;
+  right: 0;
+  color: #fff;
+  padding: 2rpx 10rpx;
+  border-radius: 12rpx;
+  font-size: 24rpx;
+  background-color: #333;
+  opacity: 0.8;
+}

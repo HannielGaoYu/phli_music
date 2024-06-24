@@ -1,0 +1,65 @@
+<view>
+  <van-search value="{{ value }}" placeholder="请输入搜索关键词" class="search"
+  shape="round"
+  background="#fafafa"
+  bind:tap="onSearch"
+  />
+</view>
+
+<swiper
+  class="banner"
+  circular
+  indicator-dots
+  style="height: {{bannerHeight}}px;"
+  autoplay="true"
+>
+  <block wx:for="{{banner}}" wx:key="*this">
+    <swiper-item 
+      class="item"
+      circular
+      indicator-dots 
+    >
+      <image src="{{item.pic}}" 
+        mode="widthFix" 
+        class="item-image"
+        bindload="imageLoad"
+      />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="recomment-song">
+  <area-header title="热门歌曲" more = "更多" bind:tap="showRanking" data-id="3778678"/>
+  <block wx:for="{{showHotSongList}}" wx:key="id">
+    <song-list itemData="{{item}}" bind:tap="onPlayMusic" data-index="{{index}}"
+      data-id="{{item.al.id}}"
+    />
+  </block>
+  
+</view>
+<!-- 
+<view class="hot-songlist">
+  <area-header title="热门歌单"/>
+  <scroll-view 
+    class="list"
+    scroll-x
+    enable-flex 
+    style="width: 375px;"
+  >
+    <block wx:for="{{hotSongMenu}}" wx:key="item.id">
+      <view class="item">
+        <menu-item itemData="{{item}}"  />
+      </view>
+    </block>
+  </scroll-view>
+</view> -->
+
+<menu-area title="热门歌单" itemData="{{hotSongMenu}}" />
+<menu-area title="推荐歌单" itemData="{{recMenuList}}"/>
+
+<area-header title="巅峰榜" hasMore="{{false}}" />
+<ranking-item itemData="{{allFlySongData}}" bind:tap="showRanking" data-id="19723756"/>
+<ranking-item itemData="{{allHotSongData}}" bind:tap="showRanking" data-id="3778678"/>
+<ranking-item itemData="{{allNewSongData}}" bind:tap="showRanking" data-id="3779629"/>
+<ranking-item itemData="{{allOriginSongData}}" bind:tap="showRanking" data-id="2884035"/>
+

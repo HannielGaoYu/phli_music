@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "ranking-song": "../../components/ranking-song/ranking-song"
+  }
+}

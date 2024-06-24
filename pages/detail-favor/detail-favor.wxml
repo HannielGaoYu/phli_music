@@ -1,0 +1,3 @@
+<block wx:for="{{favorSongList}}">
+      <ranking-song index="{{index + 1}}"  name="{{item.name}}" artists="{{item.ar[0].name}}" bind:tap="onPlayMusic" data-id="{{item.id}}" data-index="{{index}}"/>
+</block>

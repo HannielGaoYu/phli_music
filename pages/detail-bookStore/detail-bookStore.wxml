@@ -1,0 +1,11 @@
+<view class="title">我的书架</view>
+
+<view class="books">
+  <block wx:for="{{bookFavor}}">
+    <view class="book-item" bind:tap="bookMore" data-name="{{item.name}}" data-img="https://api.book.bbdaxia.com/{{item.img}}">
+      <image src="https://api.book.bbdaxia.com{{item.img}}" mode="widthFix" class="img"/>
+      <view class="book-name">{{item.name}}</view>
+    </view> 
+  </block>
+  <i></i>
+</view>

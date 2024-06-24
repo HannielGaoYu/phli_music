@@ -1,0 +1,7 @@
+<view class="area-header">
+  <view class="title">{{title}}</view>
+  <view class="more" wx:if="{{hasMore}}">
+    <view class="text">{{more}}</view>
+    <van-icon name="arrow" />
+  </view>
+</view>

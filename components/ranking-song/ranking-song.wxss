@@ -1,0 +1,42 @@
+.ranking-song {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 22rpx;
+}
+.ranking-song .ranking-index {
+  color: #555;
+  width: 50rpx;
+  font-size: 32rpx;
+  text-align: center;
+  margin-right: 30rpx;
+}
+
+.ranking-song .songInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ranking-song .songInfo .songname {
+  font-size: 34rpx;
+  font-weight: bolder;
+}
+
+.ranking-song .songInfo .other {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.ranking-song .songInfo .other .lis {
+  margin-right: 8rpx;
+  font-size: 14rpx;
+  color: #f3c258;
+  padding: 2rpx 4rpx;
+  border-radius: 8rpx;
+  border: 1px solid #f3c258;
+}

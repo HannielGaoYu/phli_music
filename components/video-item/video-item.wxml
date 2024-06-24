@@ -1,0 +1,14 @@
+<wxs src="../../utils/format.wxs" module="fm"/>
+
+<view class="itemd" bind:tap="transId">
+  <view class="album">
+    <image class="image" src="{{itemData.cover}}" mode="widthFix"/>
+    <view class="info">
+      <view class="playCount">{{fm.formatCount(itemData.playCount)}}</view>
+      <view class="playDuring">{{fm.formatTime(itemData.mv.videos[0].duration)}}</view>
+    </view>
+  </view>
+  <view class="content">
+    <view>{{itemData.name}} - {{itemData.artists[0].name}} {{itemData.artists[1].name}}</view>
+  </view>
+</view>

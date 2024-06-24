@@ -1,0 +1,43 @@
+.read-item {
+  display: flex;
+  margin-bottom: 24rpx;
+}
+.read-item img {
+  width: 128rpx;
+  
+}
+
+.read-item .img image {
+  width: 128rpx;
+}
+
+.read-item .book-info {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 24rpx;
+
+}
+
+.read-item .book-info .name {
+  font-size: 34rpx;
+}
+
+.read-item .book-info .book-dec {
+  font-size: 24rpx;
+  color: #666;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+  
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.read-item .book-info .book-tag {
+  font-size: 22rpx;
+  color: #666;
+  margin-bottom: 18rpx;
+}

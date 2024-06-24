@@ -1,0 +1,14 @@
+<view class="navbar">
+  <view class="staus"
+    style="height: {{statusHight}}px;"
+  ></view>
+  <view class="nav">
+    <view class="back" bind:tap="onBack">
+      <image src="../../assets/images/icons/arrow-left.png" mode="widthFix"/>
+    </view>
+    <view class="info">书籍信息</view>
+    <view class="share">
+      <image src="../../assets/images/icons/share_icon.png" mode="widthFix"/>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+
+<view class="directory-list-item" bind:tap="onLook">
+  <view class="name">
+    {{name}}
+  </view>
+</view>

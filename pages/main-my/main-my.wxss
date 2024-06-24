@@ -1,0 +1,42 @@
+.user {
+  text-align: center;
+  background-color: #4747;
+  padding-bottom: 40rpx;
+  border-bottom: 26rpx solid #a1a2a3;
+}
+
+.user .user-icons .img {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%; 
+}
+
+.main {
+  padding: 0 24rpx;
+  box-sizing: border-box;
+
+}
+
+.main .item {
+  display: flex;
+  justify-content: space-between;
+  height: 100rpx;
+  line-height: 100rpx;  
+  align-items: center;
+}
+
+.main .item .left {
+  display: flex;
+  align-items: center;
+}
+
+.main .item .img {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.main .item .title {
+  font-size: 36rpx;
+  margin-left: 16rpx;
+}
+

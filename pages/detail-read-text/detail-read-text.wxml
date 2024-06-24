@@ -1,0 +1,11 @@
+<view class="title">{{title}}</view>
+
+<view class="content">
+  <rich-text nodes="{{text}}"/>
+</view>
+
+<view class="tabbar">
+  <view class="pre" bind:tap="onPre">上一章</view>
+  <view class="directory">目录</view>
+  <view class="next" bind:tap="onNext">下一章</view>
+</view>

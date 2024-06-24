@@ -1,0 +1,15 @@
+<view class="songList">
+    <view class="img">
+    <image src="{{itemData.al.picUrl}}" mode="widthFix"/>
+    </view>
+    <view class="info">
+      <view class="message">
+        <view class="name">{{itemData.name}}</view>
+        <view class="artist">{{itemData.ar[0].name}}</view>
+      </view>
+      <view class="arrow">
+        <van-icon name="arrow" />
+      </view>
+    </view>
+
+</view>

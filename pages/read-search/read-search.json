@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "read-list-item": "../../components/read-list-item/read-list-item"
+  }
+}

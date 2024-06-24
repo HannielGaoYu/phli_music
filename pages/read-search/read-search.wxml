@@ -1,0 +1,16 @@
+<van-search
+  value="{{ value }}"
+  shape="round"
+  background="#fff"
+  placeholder="请输入搜索关键词"
+  bind:change="onChange"
+  bind:search="onSearch"
+/>
+
+<view class="book-list">
+  <block wx:for="{{bookData}}">
+    <read-list-item
+      itemData="{{item}}" isSearsh="{{true}}"
+    />
+  </block>
+</view>

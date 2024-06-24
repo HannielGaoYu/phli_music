@@ -1,0 +1,16 @@
+
+<view class="songlist">
+  <area-header title="{{title}}" bind:tap="onMore"/>
+  <scroll-view 
+    class="list"
+    scroll-x
+    enable-flex 
+    style="width: 375px;"
+  >
+    <block wx:for="{{itemData}}" wx:key="item.id">
+      <view class="item">
+        <menu-item itemData="{{item}}"  />
+      </view>
+    </block>
+  </scroll-view>
+</view>

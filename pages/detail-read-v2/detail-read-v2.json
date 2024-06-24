@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "show-directory-item": "../../components/show-directory-item/show-directory"
+  }
+}

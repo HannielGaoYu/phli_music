@@ -1,0 +1,45 @@
+
+
+<view class="user" bind:tap="onLogin">
+  <view class="status" style="height: {{statusHeight}}px;">
+  </view>
+  <view class="user-icons" >
+    <image src="{{nickpic ? nickpic : '../../assets/images/my/v2-6afa72220d29f045c15217aa6b275808_hd.png'}}" mode="" class="img"/>
+  </view>
+  <view class="user-name" bind:tap="onTempFlieTap">
+    {{name ? name : '未登录'}}
+  </view>
+</view>
+
+<view class="main">
+  <view class="user-music-history item" bind:tap="myHistory">
+  <view class="left">
+    <image src="../../assets/images/my/电子音源.png" mode="widthFix" class="img"/>
+    <view class="title">最近在听</view>
+  </view>
+    <van-icon name="arrow" />
+  </view>
+  <view class="user-music-favor item" bind:tap="myFavor">
+    <view class="left">
+      <image src="../../assets/images/my/收藏 (1).png" mode="widthFix" class="img"/>
+      <view class="title">最近收藏</view>
+    </view>
+    <van-icon name="arrow" />
+  </view>
+
+  <view class="user-book-history item">
+    <view class="left">
+      <image src="../../assets/images/my/future-eye.png" mode="widthFix" class="img"/>
+      <view class="title">最近在看</view>
+    </view>
+    <van-icon name="arrow" />
+  </view>
+  <view class="user-book-favor item" bind:tap="myBook">
+    <view class="left">
+      <image src="../../assets/images/my/bookshelf书架.png" mode="widthFix" class="img"/>
+      <view class="title">我的书架</view>
+    </view>
+    <van-icon name="arrow" />
+  </view>
+</view>
+

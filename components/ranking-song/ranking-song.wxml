@@ -1,0 +1,10 @@
+<view class="ranking-song">
+  <view class="ranking-index">{{index}}</view>
+  <view class="songInfo">
+    <view class="songname">{{name}}</view>
+    <view class="other">
+      <view class="lis">SQ</view>
+      <view class="artist">{{artists}}</view>
+    </view>
+  </view>
+</view>

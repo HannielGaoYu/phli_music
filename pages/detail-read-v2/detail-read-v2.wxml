@@ -1,0 +1,65 @@
+<wxs src="../../utils/format.wxs" module="fm"/>
+
+
+
+<view class="main" bind:tap="noshow"
+  style="overflow: {{show ? 'hidden' : 'scroll'}}; height: {{contentHeight}}px;"
+>
+
+<view class="main-title">
+  {{itemData.name}}
+</view>
+
+<view class="book-show">
+  <view class="img">
+    <image src="{{isSearsh ? 'https://api.book.bbdaxia.com/'+imgUrl : imgUrl}}" mode="widthFix"/>
+  </view>
+  <view class="info">
+    <view class="author">作者：{{itemData.author}}</view>
+    <view class="comes">来源：{{comes}}</view>
+    <view class="tag">{{itemData.type}}</view>
+  </view>
+</view>
+
+<view class="book-bar">
+  <view class="add" bind:tap="onFavor">加入书架</view>
+  <view class="read" bind:tap="stratRead">开始阅读</view>
+  <view class="Download">离线下载</view>
+</view>
+
+<view class="dec">
+  <view class="title">简介</view>
+  <view class="book-dec">{{itemData.desc}}</view>
+</view>
+
+<view class="booklist" bind:tap="showDirectoryList">
+  <view class="title">查看目录</view>
+  <view class="listlength">共有{{fm.getArrayLength(itemData.list)}}章</view>
+  <view class="right-row">
+    <image src="../../assets/images/icons/arrow-right.png" mode="widthFix"/>
+  </view>
+</view>
+
+<view class="content-preview">
+  <view class="preview">
+    正文预览
+  </view>
+  <view class="content" >
+    <rich-text nodes="{{previewcontent}}"/> 
+  </view>
+</view>
+
+<view class="keep-read">
+  
+</view>
+
+</view>
+<view class="directory-list" wx:if="{{show}}"
+  style="height: {{screenHeight}}px;"
+>
+  <scroll-view style="height: {{screenHeight}}px;" scroll-y>
+    <block wx:for="{{itemData.list}}">
+    <show-directory-item name="{{item.name}}" index="{{index}}" bookname="{{name}}"/>
+    </block>
+  </scroll-view>
+</view>

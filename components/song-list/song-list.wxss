@@ -1,0 +1,29 @@
+.songList {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.songList .img {
+  margin-right: 16rpx;
+}
+.songList .img image {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 20rpx;
+}
+.songList .info {
+  margin-top: -10rpx;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.songList .info .message .name {
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.songList .info .message .artist {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #666;
+}

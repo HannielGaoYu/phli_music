@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/main-music/main-music",
+    "pages/main-video/main-vedio",
+    "pages/main-world/main-world",
+    "pages/main-play/main-play",
+    "pages/detail-video/detail-video",
+    "pages/detail-ranking/detail-ranking",
+    "pages/main-read/main-read",
+    "pages/detail-read-v2/detail-read-v2",
+    "pages/detail-read-text/detail-read-text",
+    "pages/read-search/read-search",
+    "pages/main-my/main-my",
+    "pages/detail-history/detail-history",
+    "pages/detail-favor/detail-favor",
+    "pages/detail-bookStore/detail-bookStore",
+    "pages/music-search/music-search",
+    "pages/detail-playlist/detail-playlist",
+    "pages/detail-menu/detail-menu",
+    "pages/detail-login/detail-login"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/main-music/main-music",
+        "text": "音乐",
+        "iconPath": "./assets/images/tabbar/music_normal.png",
+        "selectedIconPath": "./assets/images/tabbar/music_active.png"
+      },
+      {
+        "pagePath": "pages/main-video/main-vedio",
+        "text": "视频",
+        "iconPath": "./assets/images/tabbar/video_normal.png",
+        "selectedIconPath": "./assets/images/tabbar/video_active.png"
+      },
+      {
+        "pagePath": "pages/main-world/main-world",
+        "text": "视界",
+        "iconPath": "./assets/images/tabbar/OIP-C.jpg",
+        "selectedIconPath": "./assets/images/tabbar/642184829384699152.jpg"
+      },
+      {
+        "pagePath": "pages/main-read/main-read",
+        "text": "娱阅",
+        "iconPath": "./assets/images/tabbar/书籍,图书,阅读,知识 (2).png",
+        "selectedIconPath": "./assets/images/tabbar/书籍,图书,阅读,知识 (3).png"
+      },
+      {
+        "pagePath": "pages/main-my/main-my",
+        "text": "我的",
+        "iconPath": "./assets/images/tabbar/我的-fill.png",
+        "selectedIconPath": "./assets/images/tabbar/我的-fill (1).png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,49 @@
+page {
+  /* padding: 0 24rpx; */
+  box-sizing: border-box;
+}
+
+.item {
+  padding: 0 24rpx;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: left;
+  margin: 10px 0px;
+  margin-right: 24rpx;
+  margin-top: 0;
+}
+
+.item .news-item {
+  flex: 1;
+  font-size: 28rpx;
+  font-weight: 700;
+  text-align: left;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-spacing: normal;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.item .tab {
+  /* display: inline-block; */
+  color: #f3c258;
+  padding: 1px 2px;
+  margin-right: 6px;
+  font-size: 24rpx;
+  flex-grow: 0;
+  border: 1px solid #f3c258;
+}
+.alumb {
+  margin: 10rpx 0;
+  width: 100%;
+  margin-top: 20rpx;
+  /* margin-left: -60rpx; */
+  z-index: 9;
+}
+.alumb image {
+  width: 100%;
+}

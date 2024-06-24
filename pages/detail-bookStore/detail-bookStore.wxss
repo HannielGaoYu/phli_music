@@ -1,0 +1,27 @@
+page {
+  padding: 0 24rpx;
+  box-sizing: border-box;
+}
+
+.title {
+  margin-bottom: 30rpx;
+  text-align: center;
+  font-size: 38rpx;
+} 
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.books .book-item, .books i{
+  width: 30%;
+}
+
+.books .book-item .img {
+  width: 100%;
+}
+
+.books .book-item .book-name {
+  font-size: 36rpx;
+}

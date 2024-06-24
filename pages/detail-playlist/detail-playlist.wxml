@@ -1,0 +1,41 @@
+<view class="bg-img">
+  <image src="{{playlist.coverImgUrl}}" mode="" class="img"/>
+</view>
+<view class="bg-color"></view>
+
+<view class="top">
+  
+  <view class="show-info">
+    <view class="coverImg">
+      <image src="{{playlist.coverImgUrl}}" mode="widthFix" class="img"/>
+    </view>
+    <view class="info">
+      <view class="name">{{playlist.name}}</view>
+      <view class="artist">
+        <view class="imga">
+        <image src="{{playlist.creator.avatarUrl}}" mode="widthFix" class="icons"/>
+        </view> 
+        <view class="artist-name">
+          {{playlist.creator.nickname}}
+        </view>
+      </view>
+      <view class="dec">简介：{{playlist.description}}</view>
+    </view>
+  </view>
+  <view class="bar">
+    <view class="like">
+      <image src="../../assets/images/icons/favor_icon.png" mode="widthFix" class="img"/>
+      <view class="count">{{playlist.playCount}}</view>
+    </view>
+    <view class="share">
+      <image src="../../assets/images/icons/share_icon.png" mode="widthFix" class="img"/>
+      <view class="s">分享</view>
+    </view>
+  </view>
+</view>
+
+<view class="list">
+  <block wx:for="{{playlist.tracks}}">
+    <ranking-song index="{{index + 1}}"  name="{{item.name}}" artists="{{item.ar[0].name}}" bind:tap="onPlayMusic" data-id="{{item.id}}" data-index="{{index}}"/>
+  </block>
+</view>

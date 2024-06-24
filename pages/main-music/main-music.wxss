@@ -1,0 +1,14 @@
+page {
+  padding: 0 24rpx;
+  box-sizing: border-box;
+  --search-background-color: #fff;
+  --search-padding: 10px 0;
+}
+
+.banner .item .item-image {
+  width: 100%;
+  border-radius: 16rpx;
+}
+
+
+

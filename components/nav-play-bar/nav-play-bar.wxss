@@ -1,0 +1,33 @@
+.nav {
+  display: flex;
+  height: 44px;
+  color: #fff;
+  align-items: center;
+}
+
+.left, .right, .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .left, .nav .right {
+  width: 120rpx;
+}
+
+.nav .center {
+  flex: 1;
+}
+
+.nav .left .defalut .img {
+  margin-top: 12rpx;
+  width: 40rpx;
+}
+
+.default {
+  display: none;
+}
+
+.slot:empty + .default {
+  display: flex;
+}

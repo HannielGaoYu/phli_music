@@ -1,0 +1,41 @@
+<view class="search">
+  <van-search
+  value="{{ value }}"
+  shape="round"
+  background="#fff"
+  placeholder="请输入搜索关键词"
+  bind:change="onChanges"
+  bind:search="onSearchs"
+  bind:tap="onClick"
+  >
+
+  </van-search>
+
+</view>
+
+<view class="tagbar">
+  <van-tabs 
+  swipeable 
+  bind:change="onChange" 
+  active="{{ active }}"
+  color="#fff"
+  title-inactive-color="#666"
+  title-active-color="#000"
+  >
+    <block wx:for="{{type}}">
+      <van-tab title="{{item}}">
+        <view class="book-list">
+          <block wx:for="{{alltype}}">
+            <read-list-item
+              itemData="{{item}}"
+              isSearsh="{{false}}"
+            />
+          </block>
+        </view>
+      </van-tab>
+    </block>
+  </van-tabs>
+</view>
+
+
+

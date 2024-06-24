@@ -1,0 +1,12 @@
+<view class="read-item" bind:tap="bookMore">
+  <view class="img">
+    <image src="{{isSearsh ? 'https://api.book.bbdaxia.com/'+itemData.img : itemData.img}}" mode="widthFix"/>
+  </view>
+  <view class="book-info">
+      <view class="name">{{itemData.name}}</view>
+      <view class="book-dec">{{itemData.desc}}</view>
+      <view class="book-tag">
+        {{itemData.type}}
+      </view>
+  </view>
+</view>

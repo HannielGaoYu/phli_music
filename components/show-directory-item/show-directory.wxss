@@ -1,0 +1,8 @@
+.directory-list-item {
+  padding: 24rpx;
+  padding-right: 46rpx;
+  border-bottom: 1px solid #f1f2f3;
+}
+.directory-list-item .name {
+  font-size: 30rpx;
+}

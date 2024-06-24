@@ -1,0 +1,18 @@
+<wxs src="../../utils/format.wxs" module="fm"/>
+<view class="ranking-item">
+  <view class="item-left">
+    <view class="title">{{itemData.name}}</view>
+    <block wx:for="{{fm.formatSongCount(itemData.tracks)}}" wx:key="item.id">
+      <view class="list-item">
+        <view class="name">{{index + 1}}.{{item.name}} - </view>
+        <view class="artist">{{item.ar[0].name}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="item-right">
+    <view class="album">
+      <image src="{{itemData.coverImgUrl}}" mode="widthFix"/>
+      <view class="playcount">{{fm.formatCount(itemData.playCount)}}</view>
+    </view>
+  </view>
+</view>
